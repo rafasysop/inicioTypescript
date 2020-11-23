@@ -10,10 +10,12 @@ interface IMailMessage {
 }
 
 class EmailService {
-    sendmail(to: IMailTo, message: IMailMessage) {
+    sendmail({ to, message }: { to: IMailTo; message: IMailMessage; }) {
         console.log(`Email Enviado ${to.nome}: ${message.subject}`);
         
     }
 }
 
 export default EmailService;
+
+
