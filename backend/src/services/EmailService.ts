@@ -12,7 +12,6 @@ interface IMailMessage {
 class EmailService {
     sendmail({ to, message }: { to: IMailTo; message: IMailMessage; }) {
         console.log(`Email Enviado ${to.nome}: ${message.subject}`);
-        
     }
 }
 
